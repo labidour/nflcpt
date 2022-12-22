@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: facilities
+    tests:
+    - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - facility_id
+            - week_ending
+    columns:
+      - name: facility_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_facilities_distinct_from_covidhspdatacovdtl')
+              field: facility_id
