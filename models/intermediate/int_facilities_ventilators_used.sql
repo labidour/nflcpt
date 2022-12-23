@@ -1,7 +1,7 @@
 with facid as 
 (
     select distinct
-        {{ dbt_utils.generate_surrogate_key(['facility_name']) }} as facility_id
+        {{ dbt_utils.generate_surrogate_key(['facility_name','street_address']) }} as facility_id
     ,   facility_name
     from
         {{ ref('stg_healthdatagov__CovidHspDataCovDtl')}}
