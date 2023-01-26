@@ -7,7 +7,7 @@ with facid as
         {{ ref('stg_healthdatagov__CovidHspDataCovDtl')}}
 )
 select 
-    id.facility_id
+    id.facility_id --this is really important
 ,   dtl.week_ending
 ,   dtl.total_ventilators
 ,   dtl.ventilators_used
