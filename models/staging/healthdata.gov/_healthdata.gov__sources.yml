@@ -4,3 +4,7 @@ sources:
     database: ben-sylve-dbt
     tables: 
       - name: Hospital_Data_Coverage
+
+models:
+  +materialized: view
+  +schema: staging
