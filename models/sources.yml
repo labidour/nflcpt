@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: nflmain
+    description: Contains NFL lineups data.
+    database: NFLMAIN
+    schema: PUBLIC
+    tables:
+      - name: lineups
+        description: Contains QB, RB, WR, TE, FLEX, DST, and associated stats.
+        columns:
+          - name: QB
+            description: Quarterback
+          - name: RB01
+            description: Running Back 1
+          - name: RB02
+            description: Running Back 2
+          - name: WR01
+            description: Wide Receiver 1
+          - name: WR02
+            description: Wide Receiver 2
+          - name: WR03
+            description: Wide Receiver 3
+          - name: TE
+            description: Tight End
+          - name: FLEX
+            description: Flex Player
+          - name: DST
+            description: Defense/Special Teams
+          - name: SAL
+            description: Salary
+          - name: FPTS
+            description: Fantasy Points
+          - name: VAL
+            description: Value

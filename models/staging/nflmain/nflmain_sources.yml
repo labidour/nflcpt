@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: NFL
+    database: NFLMAIN
+    schema: PUBLIC
+    tables: 
+      - name: DRAFTKINGS
+      - name: PLAYERS
+      - name: ROTOGRINDERS
+      - name: ROTOWIRE
+      - name: CPTS

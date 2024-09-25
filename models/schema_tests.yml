@@ -1,0 +1,66 @@
+models:
+  - name: qualifiedQBs
+    columns:
+      - name: qb_pos
+        tests:
+          - accepted_values:
+              values: ['QB']  # Ensure position is 'QB'
+          - not_null
+      - name: qb_team
+        tests:
+          - not_null
+
+  - name: qualifiedRBs
+    columns:
+      - name: rb_pos
+        tests:
+          - accepted_values:
+              values: ['RB']  # Ensure position is 'RB'
+          - not_null
+      - name: rb_team
+        tests:
+          - not_null
+
+  - name: qualifiedWRs
+    columns:
+      - name: wr_pos
+        tests:
+          - accepted_values:
+              values: ['WR']  # Ensure position is 'WR'
+          - not_null
+      - name: wr_team
+        tests:
+          - not_null
+
+  - name: qualifiedTEs
+    columns:
+      - name: te_pos
+        tests:
+          - accepted_values:
+              values: ['TE']  # Ensure position is 'TE'
+          - not_null
+      - name: te_team
+        tests:
+          - not_null
+
+  - name: qualifiedDSTs
+    columns:
+      - name: dst_pos
+        tests:
+          - accepted_values:
+              values: ['DST']  # Ensure position is 'DST'
+          - not_null
+      - name: dst_team
+        tests:
+          - not_null
+
+  - name: qualifiedFLEXs
+    columns:
+      - name: flex_pos
+        tests:
+          - accepted_values:
+              values: ['FLEX']  # Ensure flex is one of these positions
+          - not_null
+      - name: flex_team
+        tests:
+          - not_null
