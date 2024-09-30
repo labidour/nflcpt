@@ -12,11 +12,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Set up Git
+      # Set up Git (local to the repository)
       - name: Set up Git
         run: |
-          git config --global user.name "Randy Labidou"
-          git config --global user.email "labidour@gmail.com"
+          git config user.name "Randy Labidou"
+          git config user.email "Rlabidou@outlook.com"
 
       # Execute the Git auto-update script
       - name: Run Git Auto-Update
